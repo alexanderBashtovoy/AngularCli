@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container text-center">
+    <div class="navbar-header col-xs-12">
+      <strong class="navbar-brand">My Pomodoro Timer</strong>
+    </div>
+  </div>
+</nav>
+<div class="text-center">
+      <img [src]="LOGO" alt="Pomodoro">
+      <h1> {{ minutes }}:{{ seconds | number: '2.0' }} </h1>
+      <p>
+        <button (click)="togglePause()"
+          class="btn btn-danger">
+          {{ buttonLabel }}
+        </button>
+      </p>
+</div>
