@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { PomodoroTimerComponent } from './pomodoro-timer/pomodoro-timer.component';
+import { PomodoroTimerModule } from './pomodoro-timer/pomodoro-timer.module';
 
 @NgModule({
-  declarations: [
-    PomodoroTimerComponent
-  ],
+  declarations: [ ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    PomodoroTimerModule
   ],
   providers: [],
   bootstrap: [PomodoroTimerComponent]
