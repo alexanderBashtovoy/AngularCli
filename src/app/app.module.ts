@@ -3,16 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { PomodoroTimerComponent } from './pomodoro-timer/pomodoro-timer.component';
-import { PomodoroTimerModule } from './pomodoro-timer/pomodoro-timer.module';
+import { TaskComponent, TaskIconsComponent, FormattedTimePipe, QueuedOnlyPipe, TaskTooltipDirective } from './pomodoro-task';
 
 @NgModule({
-  declarations: [ ],
+  declarations: [ TaskComponent, TaskIconsComponent, FormattedTimePipe, QueuedOnlyPipe, TaskTooltipDirective ],
   imports: [
-    BrowserModule, 
-    PomodoroTimerModule
+    BrowserModule
   ],
   providers: [],
-  bootstrap: [PomodoroTimerComponent]
+  bootstrap: [TaskComponent]
 })
 export class AppModule { }
